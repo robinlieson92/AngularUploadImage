@@ -81,7 +81,7 @@ app.controller('ArticlesController', function($scope,$http){
   $scope.saveEdit = function(){
     $http(httpRequest('api/v1/articles/'+$scope.form.id,'PUT',$scope.form)).then(function(result) {
       	$(".modal").modal("hide");
-        console.log($scope.data.data, $scope.form.id, result.data)
+        console.log($scope.data.data, $scope.form.id, result.data, $scope.form)
         getResultsPage($scope.data.current_page);
     });
   }

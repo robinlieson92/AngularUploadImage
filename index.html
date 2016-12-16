@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <title>AngularJS Upload Image</title>
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//fezvrasta.github.io/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" href="//fezvrasta.github.io/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="app/icon.css">
 
   	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://fezvrasta.github.io/bootstrap-material-design/dist/js/material.js">     </script>
+    <script src="http://fezvrasta.github.io/bootstrap-material-design/dist/js/ripples.min.js"></script>
 
   	<!-- Angular JS -->
   	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.min.js"></script>
+    <!-- <script src="app/ng-upload.min.js"></script> -->
 
     <script src="app/packages/dirPagination.js"></script>
     <script src="app/routes.js"></script>
@@ -21,6 +30,7 @@
           z-index: -1;
       }
     </style>
+
 
     <!-- App Controller -->
   	<script src="app/controllers/ArticlesController.js"></script>
@@ -41,9 +51,9 @@
 
   			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   				<ul class="nav navbar-nav">
-  					<li><a href="#/">Home</a></li>
-  					<li><a href="#/articles">Articles</a></li>
-            <li><a href="#/galleries">Galleries</a></li>
+  					<li><a href="#/"><i class="material-icons">home</i> Home</a></li>
+  					<li><a href="#/articles"><i class="material-icons">list</i> Articles</a></li>
+            <li><a href="#/galleries"><i class="material-icons">photo</i> Galleries</a></li>
   				</ul>
   			</div>
   		</div>
@@ -54,6 +64,8 @@
   	</div>
 
   	<!-- Scripts -->
-
+    <script>
+      $.material.init();
+    </script>
   </body>
 </html>
